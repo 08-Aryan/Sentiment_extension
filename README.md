@@ -17,7 +17,7 @@ A Chrome extension that intelligently processes and analyzes web content using c
 
 1. **Clone or Download** this repository:
     ```bash
-    git clone https://github.com/ZaRobot10/sentinent_extension.git
+    https://github.com/08-Aryan/Sentiment_extension.git
     ```
 2. Open **Google Chrome** and go to `chrome://extensions/`.
 3. Enable **Developer mode** (toggle in the top right).
