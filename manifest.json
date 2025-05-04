@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Right-Click Review Classifier",
+    "version": "1.0",
+    "description": "Classify text by right-clicking on a selection and choosing 'Classify Review'.",
+    "permissions": [
+      "contextMenus",
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "idf_weights.json",
+          "model_params.json"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
